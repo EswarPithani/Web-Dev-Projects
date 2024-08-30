@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <h1>Speech to Text</h1>
+            <div class="button">
+                <button id="startButton">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="Microphone" width="50" height="50">
+                </button>
+                <small id="recordingStatus">Tap to Record</small>
+            </div>
+            <div id="output"></div>
+            <div class="buttons">
+                <button id="copyButton">Copy Text</button>
+                <button id="clearButton">Clear Text</button>
+                <button id="viewPdfButton">View PDF</button>
+            </div>
+        
+            <div id="convert_text"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
